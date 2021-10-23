@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background: #08c;
+        }
+        .container{
+            width: 50%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 60%;
+            height: 80%;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px 5px;
+            justify-content: center;
+            align-items: center ;
+            flex-direction: column;
+        }
+        .judul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+         }
+         .form-data {
+             margin: 50px 10px;
+          }
+          label, input{
+              width: 100%;
+              border-top: transparent;
+              border-left: transparent;
+              border-right: transparent;
+              padding: 10px;
+              outline: transparent;
+          }
+          .nama, .username, .password{
+              margin-bottom: 10px;
+          }
+         .btn-submit{
+             border: transparent;
+             padding: 20px;
+             background: #08c;
+             color: #fff;
+             border-radius: 20px;
+         }
+         .btn-submit:hover{
+             cursor: pointer;
+             background: #0876b1;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="judul">
+                <h1>Login</h1>
+            </div>
+            <form class="form-data" action="#"></form>
+            <form action="#">        
+                <label id="nama">Nama Lengkap</label>
+                <input type="text" class="nama" placeholder="Nama Lengkap">
+                <label id="username">Username</label>
+                <input type="text" placeholder="Username">
+                <label id="password">password</label>
+                <input type="password" placeholder="password">
+                <input type="Submit" class="btn-submit" value="Masuk">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
